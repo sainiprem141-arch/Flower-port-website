@@ -708,4 +708,70 @@ footer p {
 .company-brands span {
     color: #b7865b;
     margin: 0 10px;
+}/* =========================
+   MOBILE RESPONSIVE DESIGN
+   Desktop design unchanged
+   ========================= */
+
+@media (max-width: 600px) {
+
+  /* Header */
+  header {
+    padding: 18px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* Products: one card per row */
+  .products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px 15px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  /* Product image */
+  .product-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Product text */
+  .product-info {
+    padding: 20px;
+  }
+
+  .product-info h3 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .product-info p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
